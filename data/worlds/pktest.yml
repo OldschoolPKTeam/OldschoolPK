@@ -1,0 +1,10 @@
+template: pk.yml
+name: "OldschoolPK Test Server"
+
+beta: true
+non-combat-skill-set: true
+spawn-items: true
+
+plugins:
+  - extend: true
+  - extension: pk.test

@@ -1,0 +1,51 @@
+
+
+check this tomorrow
+https://github.com/gradle/gradle/issues/11090
+
+
+
+
+
+
+repositories
+- git submodules
+-- https://stackoverflow.com/questions/50321417/gradle-update-git-submodules
+-- https://gist.github.com/Noitidart/7af2e120bb83e2be9aa4cc3ca0a37722
+-- see if i can create a github team so i won't have to invite noah manually (make sure there's not a limit if we do that)
+-- make private repositories with github cli https://cli.github.com/
+-- this one might be better cause you can use a different account https://stackoverflow.com/a/10325316
+- symlinks
+-- https://stackoverflow.com/a/2248464
+- custom gradle plugin
+-- https://alexvasilkov.com/gradle-git
+-- https://github.com/alexvasilkov/GradleGitDependenciesPlugin/
+
+todo
+fix package directive does not match file location
+make plugin data load from each module (as resource probably to make it easier to load)
+test distZip
+
+improvements
+check the difference between implementation and api because i had to `api(project(":game:plugins:dump"))`
+
+last
+check dependencies to make sure there's nothing that's not needed
+
+opensource
+mirror everything except the plugins to a self hosted repository
+
+readme todo
+credit rsmod1, tomm, bmyte
+preserve original license
+how to add plugins
+- modules names have to be unique to itself, can't share names with other modules
+- your module's packaging should have a relation with it's location in the /plugins/ directory.
+- resources
+how to add extensions
+- files in the api.ext package cannot have the same name or they will have inconsistent behaviour
+- they should always be name module-name_ClassNameExt.kt
+- here's the issue https://youtrack.jetbrains.com/issue/KT-23366
+
+think about
+how to add new modules later for the open source version
