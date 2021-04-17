@@ -1,1 +1,4 @@
-template/
+# Ignore all plugins
+*/
+
+!/content/build.gradle.kts
