@@ -4,12 +4,8 @@
 **RS Mod** is a highly flexible user-friendly game server for use with the OSRS client. Implemented in a modular way, the framework allows developers to make and create any sort of plugin they wish without having to
 modify the core game module. Due to the plugin capabilities, even owners without programming experience can just have others make plugins for them and simply drop them into the plugins module to be automatically loaded on the next startup!
 
-<details>
-    <summary>
-        RS Mod v1.0 <a href="https://github.com/Tomm0017/rsmod">(181)</a> <a href="https://github.com/bmyte/rsmod">(193)</a><br>
-        <a href="https://github.com/rsmod/rsmod">RS Mod v2.0</a>
-    </summary><br>
-</details>
+RS Mod v1.0 <a href="https://github.com/Tomm0017/rsmod">(181)</a> <a href="https://github.com/bmyte/rsmod">(193)</a><br>
+<a href="https://github.com/rsmod/rsmod">RS Mod v2.0</a>
 
 ## Installation
 
