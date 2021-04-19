@@ -92,8 +92,23 @@ there should be a green ``run`` button, click on that and the server should begi
 ## Installing Plugins
 To install all publicly available (and any other plugins you have access to) you need to run the ``gradle git-clone`` task which will clone each individual plugin.
 
-## Creating Content
-- Create a new git repository inside the ``/game/plugins/content/`` or ``/game/plugins/core/`` folder that will house your new plugin. Push all source code to your remote repository host.
+## Creating Plugins
+##### Creating the plugin module
+- Make sure you've installed the existing plugins first.
+- Create a folder inside `/game/plugins/content/` or `/game/plugins/core/` that will contain your new plugin. 
+It should not be nested inside another plugin repository.
+- Add a `build.gradle` or `build.gradle.kts` file inside.
+- Add an `src` folder.
+- Refresh gradle and it will be automatically added as a module.
+- Any source files should be packaged according to the conventions of the existing plugins (inside the `gg.rsmod.plugins` package).
+##### Sharing your plugin
+- If you want your plugin to be added to the main repository:
+    - Your plugin module should be a public git repository.
+    - Add your plugin to the `/game/plugins/build.gradle.kts` file with the other plugins.
+- If you want to share your plugin with friends or with the community:
+    - You can use the method above and share a repository or distribute it as a zip.
+
+
 
 ## Troubleshooting
 - *Where can I get a client?*
