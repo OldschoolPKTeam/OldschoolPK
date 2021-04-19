@@ -1,11 +1,12 @@
-# RS Mod
+![](https://i.imgur.com/jiO8DaG.png)
+# OldschoolPK 
+
 [![revision: 193][rev-badge]][patch]
 
-**RS Mod** is a highly flexible user-friendly game server for use with the OSRS client. Implemented in a modular way, the framework allows developers to make and create any sort of plugin they wish without having to
-modify the core game module. Due to the plugin capabilities, even owners without programming experience can just have others make plugins for them and simply drop them into the plugins module to be automatically loaded on the next startup!
+OldschoolPK is a highly flexible, user-friendly game server based on <a href="https://github.com/bmyte/rsmod">a fork</a> of the original 
+<a href="https://github.com/Tomm0017/rsmod">RS Mod</a>.
+<br><a href="https://discord.gg/x3zQsGZrBS">Join us on Discord.</a>
 
-RS Mod v1.0 <a href="https://github.com/Tomm0017/rsmod">(181)</a> <a href="https://github.com/bmyte/rsmod">(193)</a><br>
-<a href="https://github.com/rsmod/rsmod">RS Mod v2.0</a>
 
 ## Installation
 
@@ -153,3 +154,5 @@ To install all publicly available (and any other plugins you have access to) you
 
 [patch]: https://oldschool.runescape.wiki/w/2020_Christmas_event
 [rev-badge]: https://img.shields.io/badge/revision-193-success
+
+<p>If you're interested in the development side you should also check out <a href="https://github.com/rsmod/rsmod">RS Mod v2.0</a>, which is an improved version of the original RS Mod.</p>
