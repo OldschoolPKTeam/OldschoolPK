@@ -2,3 +2,4 @@
 */
 
 !/content/build.gradle.kts
+!/core/build.gradle.kts
