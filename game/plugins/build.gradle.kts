@@ -15,10 +15,9 @@ allprojects {
 buildscript {
     repositories {
         mavenCentral()
-        mavenLocal()
     }
     dependencies {
-        classpath("io.github.mikeysasse:git-clone:1.06")
+        classpath("io.github.mikeysasse:git-clone-plugin:1.06")
     }
 }
 
