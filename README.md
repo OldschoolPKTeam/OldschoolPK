@@ -101,8 +101,8 @@ on the type of plugin you're adding.
 - Create a new folder inside the path with the chosen name of your plugin
 (ex. `/game/plugins/content/npcs/vorkath`). Your plugin cannot be nested within another plugin,
 a new folder must be used.
-- Add a `build.gradle.kts` (preferred) or `build.gradle` file inside.
-- Add an `/src/main/kotlin/` folder inside.
+- Add a `build.gradle.kts` (preferred) or `build.gradle` file inside (ex. `/game/plugins/content/your-plugin/build.gradle.kts`).
+- Add a `/src/main/kotlin/` folder inside (ex. `/game/plugins/content/your-plugin/src/main/kotlin`).
 - Refresh gradle and it will be automatically added as a module.
 
 ##### Adding source code
