@@ -95,19 +95,31 @@ To install all publicly available (and any other plugins you have access to) you
 ## Creating Plugins
 ##### Creating the plugin module
 - Make sure you've installed the existing plugins first.
-- Create a folder inside `/game/plugins/content/` or `/game/plugins/core/` that will contain your new plugin. 
-It should not be nested inside another plugin repository.
-- Add a `build.gradle` or `build.gradle.kts` file inside.
-- Add an `src` folder.
+- Select a name for your plugin. The name has to be unique to all other plugins, otherwise you will receive a build error.
+- Create a folder with that name inside `/game/plugins/content/` or `/game/plugins/core/` that will contain your new plugin. It should not be nested inside another plugin.
+- Add a `build.gradle.kts` (preferred) or `build.gradle` file inside.
+- Add an `/src/main/kotlin/` folder inside.
 - Refresh gradle and it will be automatically added as a module.
-- Any source files should be packaged according to the conventions of the existing plugins (inside the `gg.rsmod.plugins` package).
+
+##### Adding source code
+- All source code should be Kotlin and stored inside a `your-plugin/src/main/kotlin/` folder.
+- Any source files should be packaged according to the conventions of the existing plugins and it's location within the file structure
+(e.g. a plugin `/game/plugins/content/npcs/your-plugin/` should have the package `gg.rsmod.plugins.content.npcs.yourplugin`).
+- You can look in [our discord](https://discord.gg/x3zQsGZrBS) for individual tutorials on how to add new content.
+
+##### Using resource files
+- Resources are external files that are consumed inside your plugins (text, images, json).
+- Resources should be contained inside a folder called resources (`/your-plugin/src/main/resources/`).
+- All resources should have a package that matches the file in which they are consumed.
+- You can use the `getPluginResourcePackaged()` extension function to easily consume resources a class.
+
 ##### Sharing your plugin
 - If you want your plugin to be added to the main repository:
     - Your plugin module should be a public git repository.
     - Add your plugin to the `/game/plugins/build.gradle.kts` file with the other plugins.
+    - Submit a pull request on this repository with your addition.
 - If you want to share your plugin with friends or with the community:
     - You can use the method above and share a repository or distribute it as a zip.
-
 
 
 ## Troubleshooting
@@ -130,7 +142,7 @@ It should not be nested inside another plugin repository.
 - If you would like a feature added, you can create a pull request on GitHub or ask the maintainers to add the feature.
 
 #### I found a bug, where can I report it?
-- You can report them as issues on GitHub or on our discord.
+- You can report them as issues on GitHub or on [our discord](https://discord.gg/x3zQsGZrBS).
 
 ## Acknowledgments
 ### RS Mod
