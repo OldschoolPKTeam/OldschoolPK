@@ -107,8 +107,11 @@ a new folder must be used.
 
 ##### Adding source code
 - All source code should be Kotlin and stored inside a `your-plugin/src/main/kotlin/` folder.
-- Any source files should be packaged according to the conventions of the existing plugins and it's location within the file structure
-(e.g. a plugin `/game/plugins/content/npcs/your-plugin/` should have the package `gg.rsmod.plugins.content.npcs.yourplugin`).
+- Any source files should be packaged according to it's location within the file structure 
+(e.g. a plugin `/game/plugins/content/your-plugin/`, containing the kotlin file `plugin.kts` 
+should have a location of `/your-plugin/src/main/kotlin/gg/rsmod/plugins/content/yourplugin/plugin.kts` and have the package 
+`gg.rsmod.plugins.content.yourplugin`).
+
 - You can look in [our discord](https://discord.gg/x3zQsGZrBS) for individual tutorials on how to add new content.
 
 ##### Using resource files
