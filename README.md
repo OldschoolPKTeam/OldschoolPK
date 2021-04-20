@@ -96,7 +96,11 @@ To install all publicly available (and any other plugins you have access to) you
 ##### Creating the plugin module
 - Make sure you've installed the existing plugins first.
 - Select a name for your plugin. The name has to be unique to all other plugins, otherwise you will receive a build error.
-- Create a folder with that name inside `/game/plugins/content/` or `/game/plugins/core/` that will contain your new plugin. It should not be nested inside another plugin.
+- Find the folder path `/game/plugins/content` or `/game/plugins/core` depending
+on the type of plugin you're adding.
+- Create a new folder inside the path with the chosen name of your plugin
+(ex. `/game/plugins/content/npcs/vorkath`). Your plugin cannot be nested within another plugin,
+a new folder must be used.
 - Add a `build.gradle.kts` (preferred) or `build.gradle` file inside.
 - Add an `/src/main/kotlin/` folder inside.
 - Refresh gradle and it will be automatically added as a module.
