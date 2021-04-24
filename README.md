@@ -72,11 +72,12 @@ no two servers should use the same private key. We have default RSA keys set for
 
 _Note| As indicated by the revision badge at the top of this readme, the master branch of this repo is currently on ``193``, and you should always work to try and match client and cache when catering to a specific revision. Also a fair amount of work is required to change revisions as the protocols and interfaces change from revision to revision._
 
+- Create the folder path ``${rsmod-project}/data/cache/cache``
 - Go to the archives page and select the revision you want your server to run on: https://archive.runestats.com/osrs/
 - Download whichever archive you want
-- Copy the files in its "cache" folder and place them in your RS Mod folder ``${rsmod-project}/data/cache/cache/``
+- Open your downloaded archive, and copy the files in its "cache" folder and place them in your RS Mod folder you just created ``${rsmod-project}/data/cache/cache/``
 - Create the folder ``${rsmod-project}/data/cache/xteas/``
-- Copy the file ``xteas.json`` and place it in the ``xteas`` folder you just created
+- Copy the file ``xteas.json`` from the downloaded archive and place it in the ``xteas`` folder you just created
 
 #### 5) Run the Server
 - On the top-right click on the configurations box and select ``Edit Configurations...``
