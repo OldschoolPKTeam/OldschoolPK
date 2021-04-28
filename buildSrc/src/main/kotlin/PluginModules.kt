@@ -6,12 +6,12 @@ const val PLUGIN_DIRECTORY = "./game/plugins/"
 val pluginModules: List<String> by lazy {
     val moduleDirectories = search(File(PLUGIN_DIRECTORY))
     val pluginRoot = PLUGIN_DIRECTORY.replace(".", "")
-    val moduleRegex = (pluginRoot.replace("/", "\\/") + "(.+)").toRegex()
+    val moduleRegex = (pluginRoot.replace("/", "[\\/\\\\]") + "(.+)").toRegex()
 
     moduleDirectories.map {
         val matchResult = moduleRegex.find(it.absolutePath)
         val moduleName = matchResult?.groupValues?.getOrElse(1) { null }
-        "$pluginRoot$moduleName".replace("/", ":")
+        "$pluginRoot$moduleName".replace("/", ":").replace("\\", ":")
     }.toList()
 }
 
