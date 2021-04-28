@@ -17,4 +17,5 @@ dev-settings.yml
 
 error.log
 /scripts/
+plugins/
 secret.yaml

@@ -70,7 +70,7 @@ class Server {
         val worldConfiguration = WorldConfiguration(Paths.get("data", "worlds"))
         worldConfiguration.load(worldConfigurationPath)
 
-        logger.info("Loaded properties for ${worldConfiguration.get<String>("name")!!}.")
+        logger.info("Loaded properties for ${worldConfiguration.get<String>("name")!!}: $worldConfigurationPath")
 
         /*
          * Create a game context for our configurations and services to run.

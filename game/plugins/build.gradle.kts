@@ -17,7 +17,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("io.github.mikeysasse:git-clone-plugin:1.06")
+        classpath("io.github.mikeysasse:git-clone-plugin:1.07")
     }
 }
 
