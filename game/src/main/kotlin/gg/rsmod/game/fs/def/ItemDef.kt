@@ -51,7 +51,7 @@ class ItemDef(override val id: Int) : Definition(id) {
     var weaponType = -1
     var renderAnimations: IntArray? = null
     var skillReqs: Byte2ByteOpenHashMap? = null
-    lateinit var bonuses: IntArray
+    var bonuses: IntArray = IntArray(14) // Initialize in case some items have no bonuses
 
     val stackable: Boolean
         get() = stacks || noteTemplateId > 0
@@ -64,8 +64,6 @@ class ItemDef(override val id: Int) : Definition(id) {
      */
     val isPlaceholder
         get() = placeholderTemplate > 0 && placeholderLink > 0
-
-    fun isBonusInitialized(): Boolean = this::bonuses.isInitialized
 
     override fun decode(buf: ByteBuf, opcode: Int) {
         when (opcode) {
